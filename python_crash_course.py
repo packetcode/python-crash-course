@@ -1,12 +1,4 @@
-# Variables are case sensitive and must start with a letter or underscore
-x = 123
-x = 12.5
-x = 'This is a string'
-x = True
-
-# Print is used to output data
-# Type is used to find out the datatype of a variable
-print(type(x))
+print("Hey, This is Kamal")
 
 # Multiple variable assignment
 x, y = ('abc', 123)
@@ -21,10 +13,25 @@ This is a multiline comment
 This is also a multiline comment
 '''
 
-# ------------------------------------------
-# Typecasting
-y = int('123')
-print(type(y))
+# Variables are case sensitive and must start with a letter or underscore
+x = 123
+x = 12.5
+x = 'This is a string'
+x = True
+
+# Print is used to output data
+# Type is used to find out the datatype of a variable
+print(type(x))
+
+# Basic Operations
+a = 10
+b = 20
+
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a%b)
 
 # --------------------------------------------
 # String Manipulation
@@ -40,6 +47,11 @@ print(f'Hi, This is {name}')
 # String Methods
 print(len(name))
 print(name.upper())
+
+# ------------------------------------------
+# Typecasting
+y = int('123')
+print(type(y))
 
 # -------------------------------------------
 # Conditionals
@@ -65,8 +77,8 @@ if not(a<b):
 # Basic data structures
 # List - ordered, changeable, allows duplicate members
 test_list = [1, 2, 3, 'kamal']
-# created using constructor
-# test_list = list((1, 2, 3))
+# Created using constructor
+test_list = list((1, 2, 3))
 
 print(type(test_list))
 
@@ -92,18 +104,18 @@ test_tuple = tuple((1, 2, 3))
 
 print(type(test_tuple))
 
-# Single valued tuple need a trailing comma
+# Single valued tuple needs a trailing comma
 test_list = ['test']
 test_tuple = ('test',)
 
 print(test_tuple[0])
 
-# test_tuple[0] = 'kamal'
+test_tuple[0] = 'kamal'
 
 del test_tuple
-# print(test_tuple)
+print(test_tuple)
 
-# print(len(test_tuple))
+print(len(test_tuple))
 
 # -------------------------------------------------
 # Set - unordered, unindexed, no duplicate members
@@ -132,7 +144,7 @@ test_dict = {
     "name": "Kamal Teja",
     "age": 21
 }
-# test_dict = dict(name= "Kamal Teja", age= 21)
+test_dict = dict(name= "Kamal Teja", age= 21)
 
 print(type(test_dict))
 
@@ -179,15 +191,6 @@ else:
     print("x is not y")
 
 # -----------------------------------------------------------
-# Functions
-def test(name='Test'):
-    print(f'Hi , This is {name}')
-    return 'completed'
-
-x = test('Kamal')
-print(x)
-
-# -----------------------------------------------------------
 # Loops
 # For
 x = [1, 2, 3]
@@ -206,6 +209,15 @@ while True:
     count += 1
     if(count > 3):
         break
+
+# -----------------------------------------------------------
+# Functions
+def test(name='Test'):
+    print(f'Hi , This is {name}')
+    return 'completed'
+
+x = test('Kamal')
+print(x)
 
 # ------------------------------------------------------------
 # Modules
