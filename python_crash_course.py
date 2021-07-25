@@ -1,8 +1,5 @@
 print("Hey, This is Kamal")
 
-# Multiple variable assignment
-x, y = ('abc', 123)
-
 # -----------------------------------------
 # Comments
 # This is a single line comment
@@ -18,6 +15,9 @@ x = 123
 x = 12.5
 x = 'This is a string'
 x = True
+
+# Multiple variable assignment
+x, y = ('abc', 123)
 
 # Print is used to output data
 # Type is used to find out the datatype of a variable
